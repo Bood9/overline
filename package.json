@@ -1,0 +1,51 @@
+{
+  "name": "overline",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "ingest": "tsx scripts/ingest.ts",
+    "worker": "tsx scripts/worker.ts",
+    "ai": "tsx scripts/ai-test.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "set-password": "tsx scripts/set-password.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.5.0",
+    "better-sqlite3": "^11.10.0",
+    "cheerio": "^1.0.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "fast-xml-parser": "^4.5.0",
+    "next": "^16.3.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "description": "Self-hosted football analytics: odds, exchange money flow, signal convergence, Kelly staking and an auditable track record.",
+  "license": "MIT",
+  "keywords": [
+    "football",
+    "betting",
+    "analytics",
+    "odds",
+    "kelly",
+    "smarkets",
+    "nextjs",
+    "sqlite"
+  ]
+}
